@@ -6,7 +6,10 @@
   "author": "Dayo Akinkuowo",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -r esm index.js"
+    "start": "node ./index.js"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "dependencies": {
     "bcrypt": "^3.0.5",
