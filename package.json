@@ -6,23 +6,19 @@
   "author": "Dayo Akinkuowo",
   "license": "MIT",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "nodemon -r esm server.js"
   },
   "engines": {
     "node": "10.x"
   },
   "dependencies": {
-    "bcrypt": "^3.0.5",
-    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
-    "emailjs": "^2.2.0",
     "esm": "^3.2.22",
     "express": "^4.16.4",
     "http": "^0.0.0",
     "moment": "^2.24.0",
     "mongoose": "^5.4.21",
-    "restify": "^8.2.0",
-    "slug": "^1.1.0"
+    "randomcolor": "^0.5.4"
   }
 }
