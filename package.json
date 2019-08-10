@@ -6,7 +6,7 @@
   "author": "Dayo Akinkuowo",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -r esm server.js"
+    "start": "nodemon server.js"
   },
   "engines": {
     "node": "10.x"

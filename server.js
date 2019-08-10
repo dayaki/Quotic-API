@@ -1,12 +1,9 @@
-import express from "express";
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
-import randomColor from "randomcolor";
-import cors from "cors";
-const app = express();
-
-// Import config data
-import Config from "./config";
+let express = require("express");
+let bodyParser = require("body-parser");
+let mongoose = require("mongoose");
+let cors = require("cors");
+var randomColor = require("randomcolor");
+let Config = require("./config");
 
 // DB connection
 mongoose.connect(Config.database, {
@@ -15,15 +12,16 @@ mongoose.connect(Config.database, {
 });
 
 // Configuration
+const app = express();
+const router = express.Router();
 app.use(cors());
 app.options("*", cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: "5mb" }));
-const router = express.Router();
 app.use("/quotes", router);
 
 // Models
-import Quote from "./models/quote";
+let Quote = require("./models/quote");
 
 // Fetch all quotes
 router.get("/", (req, res) => {
