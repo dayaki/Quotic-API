@@ -18,7 +18,7 @@
     "express": "^4.16.4",
     "http": "^0.0.0",
     "moment": "^2.24.0",
-    "mongoose": "^5.4.21",
+    "mongoose": "^5.7.5",
     "randomcolor": "^0.5.4"
   }
 }
